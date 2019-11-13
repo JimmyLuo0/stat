@@ -1,11 +1,8 @@
-all: main.o stat.o
-	gcc -o program main.o stat.o
+all: main.o
+	gcc -o program main.o
 
-main.o: main.c stat.c
+main.o: main.c
 	gcc -c main.c
-
-stat.o: stat.c
-	gcc -c stat.c
 
 run:
 	./program
